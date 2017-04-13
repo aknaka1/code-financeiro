@@ -3,4 +3,6 @@
 	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
 		<item value="C:\Users\NB_ACER_i5\Code\laravel-vue\code-financeiro"/>
 	</list>
+	<section name="NewWizardAction">
+	</section>
 </section>
