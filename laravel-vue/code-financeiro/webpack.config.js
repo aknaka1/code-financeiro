@@ -11,7 +11,7 @@ module.exports = {
     publicPath: '/build/'
   },
   plugins: [
-    new webpack.ProviderPlugin({
+    new webpack.ProvidePlugin({
       'windows.$': 'jquery',
       'windows.jQuery': 'jquery'
     })
