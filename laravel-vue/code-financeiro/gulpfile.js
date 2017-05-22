@@ -39,7 +39,7 @@ gulp.task('webpack-dev-server', () => {
     new WebpackDevServer(webpack(config), {
         hot: true,
         proxy: {
-          '*': 'http://192.168.10.10:8000'
+          '*': 'http://192.168.10.10:8080'
         },
         watchOptions:{
             poll: true,
