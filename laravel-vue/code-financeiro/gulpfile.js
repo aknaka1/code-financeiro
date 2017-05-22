@@ -29,12 +29,12 @@ Elixir.webpack.mergeConfig(webpackDevConfig);*/
 gulp.task('webpack-dev-server', () => {
     let config = mergeWebpack(webpackConfig, webpackDevConfig);
 
-    let inlineHot = [
+    /*let inlineHot = [
         'webpack/hot/dev-server',
         'webpack-dev-server/client?http://192.168.10.10:8000'
     ];
 
-    config.entry.admin = [config.entry.admin].concat(inlineHot);
+    config.entry.admin = [config.entry.admin].concat(inlineHot);*/
 
     new WebpackDevServer(webpack(config), {
         hot: true,
@@ -61,7 +61,7 @@ elixir(mix => {
 
     mix.browserSync({
       host: '0.0.0.0',
-        proxy: 'http://192.168.10.10:8000'
+        proxy: 'http://localhost:8080'
     });
        //.webpack('app.js');
 });
